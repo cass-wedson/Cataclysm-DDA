@@ -16,7 +16,7 @@
       { "item": "katana" },
       { "item": "spear_knife" },
       { "item": "pike" },
-      { "item": "chainsaw_off" }
+      { "item": "chainsaw_off", "charges": [ 0, 450 ] }
     ]
   },
   {
@@ -123,12 +123,12 @@
       { "item": "jacket_leather" },
       { "item": "kevlar" },
       { "item": "gloves_fingerless" },
-      { "item": "mask_filter" },
-      { "item": "mask_gas" },
+      { "item": "mask_filter", "charges": [ 0, 100 ] },
+      { "item": "mask_gas", "charges": [ 0, 100 ] },
       { "item": "glasses_eye" },
       { "item": "glasses_safety" },
       { "item": "goggles_ski" },
-      { "item": "goggles_nv" },
+      { "item": "goggles_nv", "charges": [ 0, 100 ] },
       { "item": "helmet_ball" },
       { "item": "helmet_riot" }
     ]
@@ -142,15 +142,15 @@
       { "item": "wrench" },
       { "item": "saw" },
       { "item": "hacksaw" },
-      { "item": "lighter" },
-      { "item": "sewing_kit" },
+      { "item": "lighter", "charges": [ 0, 100 ] },
+      { "item": "sewing_kit", "charges": [ 0, 200 ] },
       { "item": "scissors" },
-      { "item": "extinguisher" },
-      { "item": "flashlight" },
-      { "item": "hotplate" },
-      { "item": "soldering_iron" },
+      { "item": "extinguisher", "charges": 100 },
+      { "item": "flashlight", "charges": [ 0, 100 ] },
+      { "item": "hotplate", "charges": [ 0, 500 ] },
+      { "item": "soldering_iron", "charges": [ 0, 50 ] },
       { "item": "shovel" },
-      { "item": "jackhammer" },
+      { "item": "jackhammer", "charges": [ 0, 400 ] },
       { "item": "landmine" },
       { "item": "teleporter" },
       { "item": "grenade" },

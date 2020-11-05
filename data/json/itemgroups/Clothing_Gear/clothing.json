@@ -502,8 +502,8 @@
     "type": "item_group",
     "//": "Full face protection worn with hazmat suits",
     "items": [
-      { "collection": [ { "item": "glasses_safety" }, { "item": "mask_filter", "charges-min": 0 } ], "prob": 40 },
-      { "item": "mask_gas", "prob": 60, "charges-min": 0 }
+      { "collection": [ { "item": "glasses_safety" }, { "item": "mask_filter", "charges": [ 0, 100 ] } ], "prob": 40 },
+      { "item": "mask_gas", "prob": 60, "charges": [ 0, 100 ] }
     ]
   },
   {
@@ -1886,8 +1886,8 @@
       [ "optical_cloak", 1 ],
       [ "holo_cloak", 1 ],
       [ "backpack", 38 ],
-      [ "UPS_off", 5 ],
-      [ "adv_UPS_off", 3 ],
+      { "item": "UPS_off", "prob": 5, "charges": [ 0, 1000 ] },
+      { "item": "adv_UPS_off", "prob": 3, "charges": [ 0, 10000 ] },
       [ "tacvest", 10 ],
       [ "molle_pack", 8 ],
       [ "duffelbag", 15 ],
@@ -2023,8 +2023,8 @@
       [ "glasses_bal", 20 ],
       [ "elbow_pads", 40 ],
       [ "knee_pads", 40 ],
-      [ "mask_filter", 30 ],
-      [ "mask_gas", 10 ],
+      { "item": "mask_filter", "prob": 30, "charges": [ 0, 100 ] },
+      { "item": "mask_gas", "prob": 30, "charges": [ 0, 100 ] },
       [ "goggles_ski", 30 ],
       [ "helmet_skid", 30 ],
       [ "chestguard_hard", 20 ],
@@ -2048,8 +2048,8 @@
       [ "legpouch_large", 6 ],
       [ "chestpouch", 9 ],
       [ "ammo_satchel", 4 ],
-      [ "UPS_off", 5 ],
-      [ "adv_UPS_off", 3 ],
+      { "item": "UPS_off", "prob": 5, "charges": [ 0, 1000 ] },
+      { "item": "adv_UPS_off", "prob": 3, "charges": [ 0, 10000 ] },
       [ "tacvest", 10 ],
       [ "molle_pack", 8 ],
       [ "legrig", 10 ],
@@ -2080,11 +2080,11 @@
       { "item": "gloves_rubber", "prob": 20 },
       { "item": "gloves_leather", "prob": 45 },
       { "item": "gloves_work", "prob": 45 },
-      { "item": "mask_filter", "prob": 30, "charges-min": 0 },
+      { "item": "mask_filter", "prob": 30, "charges": [ 0, 100 ] },
       { "item": "glasses_safety", "prob": 40 },
       { "item": "hat_hard", "prob": 50 },
       { "item": "hat_hard_hooded", "prob": 25 },
-      { "item": "wearable_light", "prob": 5 },
+      { "item": "wearable_light", "prob": 5, "charges": [ 0, 100 ] },
       { "item": "ear_plugs", "prob": 50 },
       { "group": "ammo_any_batteries_full", "prob": 50 },
       { "item": "flashlight", "prob": 40, "charges": [ 0, 300 ] },
@@ -2147,10 +2147,10 @@
     "type": "item_group",
     "id": "fireman_mask",
     "items": [
-      { "item": "mask_bunker", "prob": 70, "charges-min": 0 },
+      { "item": "mask_bunker", "prob": 70, "charges": [ 0, 100 ] },
       [ "mask_dust", 30 ],
-      { "item": "mask_gas", "prob": 20, "charges-min": 0 },
-      { "item": "mask_filter", "prob": 10, "charges-min": 0 },
+      { "item": "mask_gas", "prob": 20, "charges": [ 0, 100 ] },
+      { "item": "mask_filter", "prob": 10, "charges": [ 0, 100 ] },
       { "item": "goggles_nv", "prob": 2, "charges": [ 0, 100 ] },
       { "item": "goggles_ir", "prob": 1, "charges": [ 0, 100 ] }
     ]
@@ -2180,8 +2180,8 @@
     "id": "hazmat_mask",
     "items": [
       [ "mask_dust", 80 ],
-      { "item": "mask_filter", "prob": 20, "charges-min": 0 },
-      { "item": "mask_gas", "prob": 10, "charges-min": 0 }
+      { "item": "mask_filter", "prob": 20, "charges": [ 0, 100 ] },
+      { "item": "mask_gas", "prob": 10, "charges": [ 0, 100 ] }
     ]
   },
   {
@@ -2366,9 +2366,9 @@
       [ "mask_h20survivor", 1 ],
       [ "mask_bal", 14 ],
       [ "mask_hockey", 26 ],
-      [ "mask_gas", 24 ],
-      [ "mask_filter", 12 ],
-      [ "mask_bunker", 2 ],
+      { "item": "mask_gas", "prob": 24, "charges": [ 0, 100 ] },
+      { "item": "mask_filter", "prob": 24, "charges": [ 0, 100 ] },
+      { "item": "mask_bunker", "prob": 24, "charges": [ 0, 100 ] },
       [ "mask_wsurvivor", 4 ],
       [ "mask_fsurvivor", 2 ],
       [ "sunglasses", 12 ],
@@ -2396,7 +2396,7 @@
       [ "bandana", 18 ],
       [ "scarf", 26 ],
       [ "long_knit_scarf", 15 ],
-      [ "mask_gas_xl", 4 ],
+      { "item": "mask_gas_xl", "prob": 4, "charges": [ 0, 100 ] },
       [ "hat_boonie", 16 ],
       [ "beret", 18 ],
       [ "beret_wool", 14 ],
@@ -2415,7 +2415,7 @@
       [ "antiparasitic", 5 ],
       [ "diazepam", 1 ],
       [ "throw_extinguisher", 2 ],
-      [ "small_repairkit", 14 ],
+      { "item": "small_repairkit", "prob": 14, "charges": [ 0, 500 ] },
       [ "grapnel", 6 ],
       { "item": "misc_repairkit", "prob": 8, "charges-min": 0 },
       [ "survival_kit", 3 ],
@@ -2423,9 +2423,9 @@
       [ "survivor_belt", 2 ],
       [ "survivor_machete", 2 ],
       [ "spear_survivor", 2 ],
-      [ "survivor_light", 24 ],
-      [ "survivor_mess_kit", 6 ],
-      [ "survivor_shavingkit", 3 ],
+      { "item": "survivor_light", "prob": 24, "charges": [ 0, 100 ] },
+      { "item": "survivor_mess_kit", "prob": 6, "charges": [ 0, 800 ] },
+      { "item": "survivor_shavingkit", "prob": 3, "charges": [ 0, 10 ] },
       [ "survivor_hairtrimmer", 1 ],
       [ "survivor_scope", 1 ],
       [ "survnote", 30 ]
@@ -2725,7 +2725,7 @@
       { "item": "mask_guy_fawkes", "prob": 10 },
       { "item": "mask_hockey", "prob": 15 },
       { "item": "mouthpiece", "prob": 5 },
-      { "item": "mask_filter", "prob": 5 }
+      { "item": "mask_filter", "prob": 5, "charges": [ 0, 100 ] }
     ]
   },
   {

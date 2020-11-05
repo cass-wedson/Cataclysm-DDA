@@ -41,7 +41,7 @@
     "type": "item_group",
     "id": "car_misc",
     "items": [
-      [ "matches", 8 ],
+      { "item": "matches", "prob": 8, "charges": [ 0, 20 ] },
       { "item": "lighter", "prob": 10, "charges": [ 0, 100 ] },
       { "item": "ref_lighter", "prob": 2, "charges": [ 0, 50 ] },
       { "group": "tobacco_products", "prob": 26 },

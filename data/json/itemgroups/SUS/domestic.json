@@ -286,7 +286,7 @@
       { "item": "toothbrush_dirty", "prob": 80 },
       { "item": "bottle_opener", "prob": 75 },
       { "item": "pockknife", "prob": 75 },
-      { "item": "cordless_drill", "prob": 70 },
+      { "item": "cordless_drill", "prob": 70, "charges": [ 100, 500 ] },
       { "item": "scissors", "prob": 65 },
       { "item": "pliers", "prob": 65 },
       { "item": "permanent_marker", "prob": 70, "charges-min": 50 },
@@ -311,7 +311,7 @@
       { "item": "office_letter_opener", "prob": 15 },
       { "item": "razor_blade", "count": [ 1, 3 ], "prob": 15 },
       { "item": "aspirin", "prob": 15 },
-      { "item": "reading_light", "prob": 15 },
+      { "item": "reading_light", "prob": 15, "charges": [ 50, 100 ] },
       { "item": "paint_brush", "prob": 10 },
       { "item": "gum", "prob": 10 },
       { "item": "comb_pocket", "prob": 10 },
@@ -320,7 +320,7 @@
       { "item": "thermometer", "prob": 3 },
       { "item": "hygrometer", "prob": 3 },
       { "item": "barometer", "prob": 3 },
-      { "item": "smart_lamp", "prob": 3 }
+      { "item": "smart_lamp", "prob": 3, "charges": [ 50, 100 ] }
     ]
   },
   {
@@ -457,12 +457,12 @@
     "subtype": "collection",
     "entries": [
       { "item": "microwave", "prob": 90 },
-      { "item": "food_processor", "prob": 70 },
+      { "item": "food_processor", "prob": 70, "charges": [ 0, 500 ] },
       { "item": "waffleiron", "prob": 45 },
-      { "item": "multi_cooker", "prob": 25 },
+      { "item": "multi_cooker", "prob": 25, "charges": [ 0, 500 ] },
       { "item": "pastaextruder", "prob": 10 },
-      { "item": "dehydrator", "prob": 10 },
-      { "item": "hotplate", "prob": 10 },
+      { "item": "dehydrator", "prob": 10, "charges": [ 0, 500 ] },
+      { "item": "hotplate", "prob": 10, "charges": [ 0, 500 ] },
       { "collection": [ { "item": "charcoal", "prob": 70 }, { "item": "char_smoker", "prob": 100 } ], "prob": 5 },
       { "item": "can_sealer", "prob": 2 },
       { "group": "dishes_utility", "prob": 50, "count": [ 1, 3 ] }
@@ -699,7 +699,7 @@
       { "item": "scissors", "count": [ 1, 2 ], "prob": 60 },
       { "item": "hair_dryer", "prob": 60 },
       { "collection": [ { "item": "curling_iron", "count": [ 1, 2 ] }, { "item": "curler_hair" } ], "prob": 25 },
-      { "item": "elec_hairtrimmer", "prob": 30 }
+      { "item": "elec_hairtrimmer", "prob": 30, "charges": [ 0, 50 ] }
     ]
   },
   {

@@ -1535,7 +1535,7 @@
       { "group": "tools_lighting", "prob": 30 },
       { "group": "softdrugs", "prob": 30 },
       { "item": "lighter", "prob": 20, "charges": [ 0, 100 ] },
-      [ "matches", 20 ],
+      { "item": "matches", "prob": 20, "charges": [ 0, 20 ] },
       [ "pocket_survival", 5 ]
     ]
   },

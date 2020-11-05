@@ -808,8 +808,8 @@
       { "group": "softdrinks_canned", "prob": 244 },
       { "item": "bbgun", "prob": 30 },
       { "item": "bb", "prob": 30 },
-      { "item": "portable_game", "prob": 60 },
-      { "item": "game_watch", "prob": 15 },
+      { "item": "portable_game", "prob": 60, "charges": [ 0, 100 ] },
+      { "item": "game_watch", "prob": 15, "charges": [ 0, 50 ] },
       { "item": "deck_of_cards", "prob": 25 },
       { "item": "atomic_light", "prob": 1 },
       { "item": "inflatable_boat", "prob": 10 },
@@ -836,12 +836,12 @@
       { "item": "gum", "prob": 10 },
       { "item": "talking_doll", "prob": 11, "charges": [ 0, 100 ] },
       { "item": "marble", "prob": 15 },
-      { "item": "creepy_doll", "prob": 1 },
+      { "item": "creepy_doll", "prob": 1, "charges": [ 0, 100 ] },
       { "item": "jedi_cloak", "prob": 5 },
       { "item": "glowstick", "prob": 15, "charges": 1400 },
       { "item": "clown_suit", "prob": 5 },
       { "item": "clownshoes", "prob": 5 },
-      { "item": "l-stick", "prob": 1 },
+      { "item": "l-stick", "prob": 1, "charges": [ 0, 500 ] },
       { "item": "inflatable_dragon", "prob": 1, "charges": [ 0, 500 ] },
       { "item": "inflatable_ghost", "prob": 1, "charges": [ 0, 500 ] },
       { "item": "fog_machine", "prob": 1, "charges": [ 0, 500 ] }
@@ -856,7 +856,7 @@
     "type": "item_group",
     "id": "paintball_items",
     "//": "For paintball_field.json",
-    "items": [ [ "paintballgun", 55 ], [ "paintball", 45 ], [ "goggles_swim", 15 ] ]
+    "items": [ { "item": "paintballgun", "prob": 55, "charges": [ 0, 50 ] }, [ "paintball", 45 ], [ "goggles_swim", 15 ] ]
   },
   {
     "id": "musicstore_showpiece",
@@ -971,8 +971,8 @@
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
-      { "item": "cig", "prob": 50 },
-      { "item": "matches", "prob": 45 },
+      { "item": "cig", "prob": 50, "charges": [ 0, 20 ] },
+      { "item": "matches", "prob": 45, "charges": [ 0, 20 ] },
       { "item": "rolling_paper", "prob": 10 },
       { "item": "bottle_glass", "prob": 50 },
       { "item": "bottle_plastic", "prob": 70 },
@@ -988,13 +988,13 @@
     "type": "item_group",
     "subtype": "distribution",
     "entries": [
-      { "item": "weed", "prob": 30 },
-      { "item": "coke", "prob": 30 },
-      { "item": "aspirin", "prob": 40 },
-      { "item": "cig", "prob": 20 },
+      { "item": "weed", "prob": 30, "charges-min": 1 },
+      { "item": "coke", "prob": 30, "charges-min": 1 },
+      { "item": "aspirin", "prob": 40, "charges-min": 1 },
+      { "item": "cig", "prob": 20, "charges": 1 },
       { "item": "syringe", "prob": 20 },
-      { "item": "meth", "prob": 10 },
-      { "item": "heroin", "prob": 5 },
+      { "item": "meth", "prob": 10, "charges-min": 1 },
+      { "item": "heroin", "prob": 5, "charges-min": 1 },
       { "item": "mag_porn", "prob": 35 },
       { "item": "hairpin", "prob": 5 },
       { "item": "purse", "prob": 15 }
@@ -1180,7 +1180,7 @@
       { "item": "cordless_drill", "prob": 70, "charges": [ 0, 500 ] },
       [ "thermometer", 60 ],
       [ "saw", 90 ],
-      [ "chainsaw_off", 10 ],
+      { "item": "chainsaw_off", "prob": 10, "charges": [ 0, 450 ] },
       [ "bucket", 100 ],
       [ "tree_spile", 100 ],
       [ "pot", 100 ]
@@ -1234,7 +1234,7 @@
     "//": "For cs_car_showroom",
     "items": [
       { "group": "ammo_pocket_batteries_full", "prob": 30 },
-      [ "radio", 10 ],
+      { "item": "radio", "prob": 10, "charges": [ 0, 100 ] },
       [ "eyedrops", 10 ],
       [ "rag", 30 ],
       [ "paper", 30 ],
@@ -1321,7 +1321,7 @@
       [ "solar_cell", 10 ],
       [ "screwdriver", 15 ],
       [ "superglue", 5 ],
-      [ "polisher", 15 ],
+      { "item": "polisher", "prob": 15, "charges": [ 0, 100 ] },
       [ "solar_panel", 15 ]
     ]
   },
@@ -1349,7 +1349,7 @@
       [ "solar_cell", 10 ],
       [ "screwdriver", 15 ],
       [ "superglue", 5 ],
-      [ "polisher", 15 ],
+      { "item": "polisher", "prob": 15, "charges": [ 0, 100 ] },
       [ "solar_panel", 15 ]
     ]
   },
@@ -1412,7 +1412,7 @@
       [ "solar_cell", 10 ],
       [ "screwdriver", 15 ],
       [ "superglue", 5 ],
-      [ "polisher", 15 ],
+      { "item": "polisher", "prob": 15, "charges": [ 0, 100 ] },
       [ "solar_panel", 15 ],
       [ "spare_tire_carrier", 10 ],
       [ "mounted_spare_tire", 10 ]
@@ -1442,7 +1442,7 @@
       [ "solar_cell", 10 ],
       [ "screwdriver", 15 ],
       [ "superglue", 5 ],
-      [ "polisher", 15 ],
+      { "item": "polisher", "prob": 15, "charges": [ 0, 100 ] },
       [ "solar_panel", 15 ],
       [ "spare_tire_carrier", 10 ],
       [ "mounted_spare_tire", 10 ]
@@ -1460,13 +1460,13 @@
     "//": "for cs_sex_shop",
     "items": [
       [ "corset", 20 ],
-      { "item": "vibrator", "prob": 20, "charges": [ 0, 100 ] },
+      { "item": "vibrator", "prob": 20, "charges": [ 90, 100 ] },
       [ "leather_cat_tail", 20 ],
       [ "leather_cat_ears", 20 ],
       [ "leather_collar", 20 ],
       [ "bondage_mask", 20 ],
       [ "bullwhip", 20 ],
-      { "item": "candle", "prob": 20, "charges": [ 0, 100 ] },
+      { "item": "candle", "prob": 20, "charges": [ 90, 100 ] },
       [ "condom", 20 ]
     ]
   },
@@ -1496,16 +1496,16 @@
     "//": "for cs_sex_shop",
     "subtype": "distribution",
     "entries": [
-      { "item": "weed", "prob": 10 },
-      { "item": "coke", "prob": 10 },
-      { "item": "meth", "prob": 10 },
-      { "item": "aspirin", "prob": 10 },
+      { "item": "weed", "prob": 10, "charges-min": 1 },
+      { "item": "coke", "prob": 10, "charges-min": 1 },
+      { "item": "meth", "prob": 10, "charges-min": 1 },
+      { "item": "aspirin", "prob": 10, "charges-min": 1 },
       { "item": "mag_porn", "prob": 10 },
       { "item": "purse", "prob": 10 },
       { "item": "hairpin", "prob": 5 },
       { "item": "syringe", "prob": 10 },
       { "item": "blanket", "prob": 20 },
-      { "item": "candle", "prob": 20, "charges": [ 0, 100 ] },
+      { "item": "candle", "prob": 20, "charges": [ 90, 100 ] },
       { "item": "pillow", "prob": 20 }
     ]
   },
@@ -1516,10 +1516,10 @@
       [ "magnifying_glass", 5 ],
       { "item": "sewing_kit", "prob": 15, "charges-min": 0 },
       [ "scissors", 10 ],
-      [ "gasoline_lantern", 7 ],
+      { "item": "gasoline_lantern", "prob": 7, "charges": [ 0, 500 ] },
       { "item": "flashlight", "prob": 25, "charges": [ 0, 300 ] },
-      [ "hotplate", 20 ],
-      [ "coffeemaker", 25 ],
+      { "item": "hotplate", "prob": 20, "charges": [ 0, 500 ] },
+      { "item": "coffeemaker", "prob": 25, "charges": [ 0, 500 ] },
       [ "textbook_firstaid", 2 ],
       [ "pocket_firearms", 1 ],
       [ "mag_archery", 4 ]
@@ -1565,7 +1565,10 @@
     "//": "For s_electronics shops",
     "ammo": 75,
     "magazine": 100,
-    "items": [ [ "eink_tablet_pc", 60 ], [ "laptop", 75 ] ]
+    "items": [
+      { "item": "eink_tablet_pc", "prob": 60, "charges": [ 0, 100 ] },
+      { "item": "laptop", "prob": 75, "charges": [ 0, 500 ] }
+    ]
   },
   {
     "id": "elecsto_entapl",
@@ -1573,7 +1576,7 @@
     "//": "For s_electronics shops",
     "ammo": 75,
     "magazine": 100,
-    "items": [ [ "television", 50 ], [ "radio", 20 ], [ "stereo", 40 ] ]
+    "items": [ [ "television", 50 ], { "item": "radio", "prob": 20, "charges": [ 0, 100 ] }, [ "stereo", 40 ] ]
   },
   {
     "id": "elecsto_persele",
@@ -1711,10 +1714,10 @@
       { "item": "cell_phone", "prob": 20, "charges": [ 0, 150 ] },
       [ "mag_computer", 20 ],
       { "group": "ammo_pocket_batteries_full", "prob": 20 },
-      [ "radio", 20 ],
+      { "item": "radio", "prob": 20, "charges": [ 0, 100 ] },
       [ "television", 20 ],
-      [ "two_way_radio", 20 ],
-      [ "noise_emitter", 20 ],
+      { "item": "two_way_radio", "prob": 20, "charges": [ 0, 100 ] },
+      { "item": "noise_emitter", "prob": 20, "charges": [ 0, 100 ] },
       [ "eyedrops", 20 ],
       [ "mag_electronics", 20 ],
       [ "ecig", 20 ],
@@ -1736,8 +1739,8 @@
       [ "disinfectant", 15 ],
       [ "vaccine_shot", 10 ],
       [ "protein_powder", 15 ],
-      [ "smoxygen_tank", 20 ],
-      [ "elec_hairtrimmer", 15 ],
+      { "item": "smoxygen_tank", "prob": 20, "charges": [ 0, 12 ] },
+      { "item": "elec_hairtrimmer", "prob": 15, "charges": [ 0, 50 ] },
       [ "survnote", 5 ],
       [ "mask_dust", 65 ],
       [ "glasses_safety", 10 ],
@@ -1794,7 +1797,7 @@
       [ "morphine", 10 ],
       [ "codeine", 15 ],
       [ "saline", 15 ],
-      [ "smoxygen_tank", 10 ],
+      { "item": "smoxygen_tank", "prob": 10, "charges": 12 },
       { "group": "full_1st_aid", "prob": 30 },
       [ "medical_tape", 35 ],
       [ "blood", 5 ],
@@ -1911,6 +1914,6 @@
   {
     "type": "item_group",
     "id": "gunshop_accessories",
-    "items": [ [ "powered_earmuffs", 50 ], [ "ear_plugs", 80 ] ]
+    "items": [ { "item": "powered_earmuffs", "prob": 50, "charges": [ 0, 100 ] }, [ "ear_plugs", 80 ] ]
   }
 ]

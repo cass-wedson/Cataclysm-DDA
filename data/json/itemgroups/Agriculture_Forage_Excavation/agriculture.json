@@ -45,7 +45,7 @@
       [ "hoe", 60 ],
       [ "shovel", 60 ],
       [ "g_shovel", 60 ],
-      [ "trimmer_off", 60 ],
+      { "item": "trimmer_off", "prob": 60, "charges": [ 0, 600 ] },
       [ "boots", 60 ],
       [ "bucket", 40 ],
       [ "gloves_rubber", 60 ],
