@@ -272,7 +272,7 @@
       { "item": "portable_game", "prob": 20, "charges": 100 },
       [ "antenna", 25 ],
       { "group": "ammo_any_batteries_full", "prob": 50 },
-      [ "mp3", 40 ],
+      { "item": "mp3", "prob": 40, "charges": 100 },
       [ "usb_drive", 10 ],
       [ "manual_electronics", 20 ],
       [ "cable", 60 ],

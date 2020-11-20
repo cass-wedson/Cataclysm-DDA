@@ -96,12 +96,12 @@
     "//": "Healing items appropriate for soldiers and other paramilitary forces",
     "entries": [
       { "distribution": [ { "group": "full_ifak" }, { "group": "used_ifak" } ], "prob": 50 },
-      { "item": "antibiotics", "prob": 20 },
-      { "item": "bandages", "prob": 100 },
-      { "item": "morphine", "prob": 20 },
-      { "item": "quikclot", "prob": 20 },
+      { "item": "antibiotics", "prob": 20, "charges-min": 1 },
+      { "item": "bandages", "prob": 100, "charges-min": 1 },
+      { "item": "morphine", "prob": 20, "charges-min": 1 },
+      { "item": "quikclot", "prob": 20, "charges-min": 1 },
       { "item": "smoxygen_tank", "prob": 20, "charges": [ 0, 12 ] },
-      { "item": "tramadol", "prob": 20 }
+      { "item": "tramadol", "prob": 20, "charges-min": 1 }
     ]
   },
   {
@@ -139,23 +139,23 @@
     "type": "item_group",
     "id": "softdrugs",
     "items": [
-      [ "bandages", 30 ],
-      [ "adhesive_bandages", 30 ],
-      [ "cotton_ball", 50 ],
+      { "item": "bandages", "prob": 30, "charges-min": 1 },
+      { "item": "adhesive_bandages", "prob": 30, "charges-min": 1 },
+      { "item": "cotton_ball", "prob": 50, "charges-min": 1 },
       { "group": "used_1st_aid", "prob": 35 },
-      [ "saline", 25 ],
+      { "item": "saline", "prob": 25, "charges-min": 1 },
       [ "contacts", 10 ],
-      [ "vitamins", 75 ],
-      [ "gummy_vitamins", 25 ],
-      [ "calcium_tablet", 75 ],
-      [ "aspirin", 85 ],
-      [ "caffeine", 25 ],
-      [ "pills_sleep", 15 ],
-      [ "iodine", 5 ],
-      [ "prussian_blue", 5 ],
-      [ "dayquil", 70 ],
-      [ "nyquil", 70 ],
-      [ "disinfectant", 35 ],
+      { "item": "vitamins", "prob": 75, "charges-min": 1 },
+      { "item": "gummy_vitamins", "prob": 25, "charges-min": 1 },
+      { "item": "calcium_tablet", "prob": 75, "charges-min": 1 },
+      { "item": "aspirin", "prob": 85, "charges-min": 1 },
+      { "item": "caffeine", "prob": 25, "charges-min": 1 },
+      { "item": "pills_sleep", "prob": 15, "charges-min": 1 },
+      { "item": "iodine", "prob": 5, "charges-min": 1 },
+      { "item": "prussian_blue", "prob": 5, "charges-min": 1 },
+      { "item": "dayquil", "prob": 70, "charges-min": 1 },
+      { "item": "nyquil", "prob": 70, "charges-min": 1 },
+      { "item": "disinfectant", "prob": 35, "charges-min": 1 },
       [ "vaccine_shot", 10 ],
       {
         "item": "protein_powder",
@@ -164,14 +164,14 @@
         "charges-min": 1,
         "charges-max": 9
       },
-      [ "caff_gum", 10 ],
+      { "item": "caff_gum", "prob": 10, "charges-min": 1 },
       { "item": "oxygen_tank", "prob": 20, "charges": [ 0, 24 ] },
       { "item": "smoxygen_tank", "prob": 5, "charges": [ 0, 12 ] },
-      [ "eyedrops", 35 ],
+      { "item": "eyedrops", "prob": 35, "charges-min": 1 },
       { "item": "shavingkit", "prob": 5, "charges": [ 0, 10 ] },
       { "item": "elec_hairtrimmer", "prob": 2, "charges": [ 0, 50 ] },
-      [ "nic_gum", 25 ],
-      [ "weak_antibiotic", 30 ]
+      { "item": "nic_gum", "prob": 25, "charges-min": 1 },
+      { "item": "weak_antibiotic", "prob": 30, "charges-min": 1 }
     ]
   },
   {
